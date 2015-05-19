@@ -7,8 +7,6 @@ import Servant
 import Servant.Docs
 import Servant.Client
 
-data Weekday = Monday | Tuesday | Wednesday | Thursday
-
 type NumberAPI = "obtainnumber" :> Get '[JSON] Int
             :<|> "add" :> Capture "x" Int :> Capture "x" Int :> Get '[JSON] Int
 
